@@ -5,9 +5,9 @@
 | Group \#:      |     |
 | -------------- | --- |
 | Student Names: |     |
-|                |  Mason Harris   |
 |                |     |
 |                |     |
+|                |Jonas Wong|
 
 # 1 Introduction
 
