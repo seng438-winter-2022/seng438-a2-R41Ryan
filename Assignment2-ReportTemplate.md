@@ -2,11 +2,11 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group \#:      |     |
+| Group \#:      |  34   |
 | -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
+| Student Names: |Mason Harris   |
+|                |Ryan Huynh  |
+|                |Mathew Pelletier  |
 |                |Jonas Wong|
 
 # 1 Introduction
@@ -27,7 +27,7 @@ you have explained in the test strategy section //above
 
 # 4 How the team work/effort was divided and managed
 
-Text…
+We selected the 5 methods from org.jfree.data.Range that we wanted to test as a group, then divided the 10 methods between ourselves. Mathew created tests for three methods from org.jfree.data.Range (contains(), getCentralValue(), and getLength()). Mason created tests for the remaining two methods from org.jfree.data.Range (getUpperBound() and getLowerBound()). Ryan created tests for three methods from org.jfree.data.DataUtilities (calculateColumnTotal(), createNumberArray(), and getCumulativePercentages()). Jonas created tests for the remaining two methods from org.jfree.data.DataUtilities (calculateRowTotal() and equal()). After the tests were created, we met as a group to check each others work and provide feedback.
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
