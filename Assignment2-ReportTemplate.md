@@ -5,7 +5,7 @@
 | Group \#:      |     |
 | -------------- | --- |
 | Student Names: |     |
-|                |     |
+|                |  Mason Harris   |
 |                |     |
 |                |     |
 
