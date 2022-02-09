@@ -190,10 +190,17 @@ public class RangeTest {
     }
     
     @Test
-    public void testSameValuesUpperBound() {
+    public void testSamePositiveValuesUpperBound() {
     	exampleRange = new Range(1,1);
     	assertEquals("The upper bound of 1 and 1 should be 1",
     	1, exampleRange.getUpperBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSameNegativeValuesUpperBound() {
+    	exampleRange = new Range(-1, -1);
+    	assertEquals("The upper bound of -1 and -1 should be -1",
+    	-1, exampleRange.getUpperBound(), .000000001d);
     }
     
     @Test
