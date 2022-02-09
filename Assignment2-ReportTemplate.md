@@ -55,8 +55,7 @@ We selected the 5 methods from org.jfree.data.Range that we wanted to test as a 
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+Most of the team has already previously used Junit and done testing before so the lab was not too difficult. Doing the testing with equivalence class testing and boundary value testing in mind was helpful in identifying the best tests to implement and allowed us to find certain tests that would not have been thought of previously. Initially figuring out how the mocking worked was difficult but with a little practice, it became easier. Finding a good time to have meetings was again a little bit difficult but with compromises, we were all able to meet together multiple times and worked well together.  
 
 # 6 Comments/feedback on the lab itself
-
-Text…
+There were a few difficulties with this lab. Firstly, hamcrest-all was needed in order to do the mocking for the tests which was not initially provided which caused some confusion, having all external jar files would have allowed for less frustrations during the lab. Secondly, the execution environment JRE was version 8 but eclipse shows version 8 as 1.8 which was not explained very clearly again causing some confusion. Other than those points, the lab was well written and having the jmock example was extremely helpful to help have a more solid idea of how to do mocking.
