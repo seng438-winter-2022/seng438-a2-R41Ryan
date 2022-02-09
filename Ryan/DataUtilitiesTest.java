@@ -11,6 +11,7 @@ import org.junit.Test;
 public class DataUtilitiesTest {
 	
 	@Test
+	// This is just a basic test with positive values to see if it works as intended using column 0
 	public void testBasicCalculateColumnTotal() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -29,6 +30,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests to see if null values are ignored when calculating the total by adding a single null value in a column.
 	public void testCalculateColumnTotalWithNull() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -47,6 +49,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests to see if null values are ignored when calculating the total by having an entire column null
 	public void testCalculateColumnTotalWithAllNulls() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -65,6 +68,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests to see if the calculated value is 0 when there are no rows.
 	public void testCalculateColumnTotalWithNoRows() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -79,6 +83,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test(expected = IndexOutOfBoundsException.class)
+	// This tests to see if an IndexOutOfBoundsException is thrown when entering the column -1
 	public void testCalculateColumnTotalOutOfBoundsNegative() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -97,6 +102,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test(expected = IndexOutOfBoundsException.class)
+	// This tests to see if an IndexOutOfBoundsException is thrown when entering a column greater than the maximum index allows (in this case, column 2)
 	public void testCalculateColumnTotalOutOfBoundsPositive() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -117,6 +123,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests to see if the method still works as intended when selecting the positive bound (in this case, column 1)
 	public void testCalculateColumnPositiveBound() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -137,6 +144,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests to see if the method still works as intended when selecting the positive bound (in this case, column 1)
 	public void testCalculateColumnValidRows() {
 		Mockery context = new Mockery();
 		final Values2D values = context.mock(Values2D.class);
@@ -162,6 +170,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests the method using positive integers and decimals
 	public void testCreateNumberArrayPositiveValues() {
 		double[] testArray = {1.5, 2.244, 3.325, 2, 5, 23.4, 2.00001, 0};
 		Number[] results = DataUtilities.createNumberArray(testArray);
@@ -176,6 +185,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests the method using negative integers and decimals
 	public void testCreateNumberArrayNegativeValues() {
 		double[] testArray = {-1.5, -2.244, -3.325, -2, -5, -23.4, -2.00001, 0};
 		Number[] results = DataUtilities.createNumberArray(testArray);
@@ -190,6 +200,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests the method using only positive integers
 	public void testGetCumulativePercentagesPositiveIntegers() {
 		Mockery context = new Mockery();
 		final KeyedValues values = context.mock(KeyedValues.class);
@@ -224,6 +235,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests the method using doubles
 	public void testGetCumulativePercentagesDoubles() {
 		Mockery context = new Mockery();
 		final KeyedValues values = context.mock(KeyedValues.class);
@@ -258,6 +270,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test
+	// This tests the methods to see if it still works as intended with a negative integer.
 	public void testGetCumulativePercentagesNegativeIntegers() {
 		Mockery context = new Mockery();
 		final KeyedValues values = context.mock(KeyedValues.class);
