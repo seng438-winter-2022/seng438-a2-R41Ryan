@@ -117,7 +117,112 @@ public class RangeTest {
         2000000000, exampleLargeRange.getLength(), .000000001d);
     }
     
+    // getLowerBound() testing
+    @Test
+    public void testNegativeLowerBound() {
+    	exampleRange = new Range(-2, 4);
+        assertEquals("The lower bound of -2 and 4 should be -2",
+        -2, exampleRange.getLowerBound(), .000000001d);
+    }
     
+    @Test
+    public void testPositiveLowerBound() {
+    	exampleRange = new Range(3, 10);
+        assertEquals("The lower bound of 3 and 10 should be 3",
+        3, exampleRange.getLowerBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSamePositiveValuesLowerBound() {
+    	exampleRange = new Range(1, 1);
+    	assertEquals("The lower bound of 1 and 1 should be 1",
+    	1, exampleRange.getLowerBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSameNegativeValuesLowerBound() {
+    	exampleRange = new Range(-1, -1);
+    	assertEquals("The lower bound of -1 and -1 should be -1",
+    	-1, exampleRange.getLowerBound(), .000000001d);
+    }
+    
+    @Test
+    public void testNegativeDecimalLowerBound() {
+    	exampleRange = new Range(-2.03, 4.15);
+        assertEquals("The lower bound of -2.03 and 4.15 should be -2.03",
+        -2.03, exampleRange.getLowerBound(), .000000001d);
+    }
+    
+    @Test
+    public void testPositiveDecimalLowerBound() {
+    	exampleRange = new Range(3.54, 10.002);
+        assertEquals("The lower bound of 3.54 and 10.002 should be 3.54",
+        3.54, exampleRange.getLowerBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSamePositiveValuesDecimalLowerBound() {
+    	exampleRange = new Range(1.112, 1.112);
+    	assertEquals("The lower bound of 1.112 and 1.112 should be 1.112",
+    	1.112, exampleRange.getLowerBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSameNegativeValuesDecimalLowerBound() {
+    	exampleRange = new Range(-1.112, -1.112);
+    	assertEquals("The lower bound of -1.112 and -1.112 should be -1.112",
+    	-1.112, exampleRange.getLowerBound(), .000000001d);
+    }
+    
+    // getUpperBound() testing
+    @Test
+    public void testNegativeUpperBound() {
+    	exampleRange = new Range(-2, 4);
+        assertEquals("The upper bound of -2 and 4 should be 4",
+        4, exampleRange.getUpperBound(), .000000001d);
+    }
+    
+    @Test
+    public void testPositiveUpperBound() {
+    	exampleRange = new Range(3, 10);
+        assertEquals("The upper bound of 3 and 10 should be 10",
+        10, exampleRange.getUpperBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSameValuesUpperBound() {
+    	exampleRange = new Range(1,1);
+    	assertEquals("The upper bound of 1 and 1 should be 1",
+    	1, exampleRange.getUpperBound(), .000000001d);
+    }
+    
+    @Test
+    public void testNegativeDecimalUpperBound() {
+    	exampleRange = new Range(-4.45, -2.36);
+        assertEquals("The upper bound of -2.36 and -4.45 should be -2.36",
+        -2.36, exampleRange.getUpperBound(), .000000001d);
+    }
+    
+    @Test
+    public void testPositiveDecimalUpperBound() {
+    	exampleRange = new Range(3.09, 10.69);
+        assertEquals("The upper bound of 3.09 and 10.69 should be 10.69",
+        10.69, exampleRange.getUpperBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSamePositiveValuesDecimalUpperBound() {
+    	exampleRange = new Range(1.17, 1.17);
+    	assertEquals("The upper bound of 1.17 and 1.17 should be 1.17",
+    	1.17, exampleRange.getUpperBound(), .000000001d);
+    }
+    
+    @Test
+    public void testSameNegativeValuesDecimalUpperBound() {
+    	exampleRange = new Range(-1.17, -1.17);
+    	assertEquals("The upper bound of -1.17 and -1.17 should be -1.17",
+    	-1.17, exampleRange.getUpperBound(), .000000001d);
+    }
     
 
     @After
