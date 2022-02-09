@@ -99,6 +99,27 @@ getCumulativePercentages() Method:
 * testGetCumulativePercentagesDoubles() - This tests the method using doubles
 * testGetCumulativePercentagesNegativeIntegers() - This tests the methods to see if it still works as intended with a negative integer.
 
+calculateRowTotal() Method:
+* calculateRowTotalForTwoValues() – Tests two positive values within row 0.
+* calculateRowTotalForNoTable() -Test for when there is no table to retrieve values from.
+* calculateRowTotalWithOneZeroValue() – Tests whether it works for a row where there is an element with a value of zero.
+* calculateRowTotalForZeroValues() – Tests for a whole row with zero. 
+* calculateRowTotalWithOneNullValue() - Tests whether it works for a row where there is a null element.
+* calculateRowTotalForNullValues() - Tests for a whole row with null elements.
+* calculateRowTotalForPositiveRowWhichDoesNotExist() – Tests for whether an IndexOutOfBoundsException is thrown for when a positive row greater than the maximum index is given.
+* calculateRowTotalForNegativeRowWhichDoesNotExist() – Tests for whether an IndexOutOfBoundsException is thrown for when a negative row is given.
+
+equal() Method:
+* EqualArrays() – Tests for whether it can properly check two equal arrays with positive values. 
+* NonEqualArrays() – Test for whether it can tell two non-equal arrays with positive values are not equal.
+* NonEqualArraysWithNegativeValues()  – Test if it can tell whether two non-equal arrays due to negative values are not equal.
+* EqualArraysWithEmptyElements() – Test for two equal arrays, both with same index empty elements.
+* EqualArraysWithNullArrays() – Test for two equal arrays, both which are null.
+* EqualArraysWithEmptyArrays() – Test for two equal arrays, both with completely empty arrays.
+* NonEqualArraysofDifferentRowSizes() – Test to see if it can tell non-equal arrays due to different size of the rows, apart.
+* NonEqualArraysofDifferentColumnSizes() – Test to see if it can tell non-equal arrays due to different size of the columns, apart.
+* EqualArraysWithNegativeValues() – Tests if it can tell that two arrays with the same negative values, are the same or not. 
+
 # 4 How the team work/effort was divided and managed
 
 We selected the 5 methods from org.jfree.data.Range that we wanted to test as a group, then divided the 10 methods between ourselves. Mathew created tests for three methods from org.jfree.data.Range (contains(), getCentralValue(), and getLength()). Mason created tests for the remaining two methods from org.jfree.data.Range (getUpperBound() and getLowerBound()). Ryan created tests for three methods from org.jfree.data.DataUtilities (calculateColumnTotal(), createNumberArray(), and getCumulativePercentages()). Jonas created tests for the remaining two methods from org.jfree.data.DataUtilities (calculateRowTotal() and equal()). After the tests were created, we met as a group to check each others work and provide feedback.
