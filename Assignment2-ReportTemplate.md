@@ -32,6 +32,7 @@ getCentralValue() Method
 * centralValueNegativeRange - Tests a range with only negative values  
 * centralValueZeroWidethRange - Tests a range with zero width where the upper boundary = lower boundary  
 * centralValueLargeRange() - Tests a range with very large values for upper and lower boundaries  
+* centralValueNonIntRange() - Test a a range with non integer boundaries to ensure the returned central value is correct  
 
 contains() Method: These tests unless specified all test a generic range with negative and positive values  
 * containsValueInRange() - This test the equivalence class for a value contained in the specified range  
@@ -47,6 +48,7 @@ getLength() Method
 * getLengthPositiveRange() - This tests a range containing only positive values  
 * getLengthZeroRange() - This tests a zero width range with upper boundary = lower boundary  
 * getLengthLargeRange() - This tests a range with very large values for for the upper and lower boundary  
+* getLengthNonIntRange() - This tests a range with non integer boundaries to ensure the returned length is correct  
 
 ## DataUtilities Class
 
