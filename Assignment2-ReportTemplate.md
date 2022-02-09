@@ -11,7 +11,9 @@
 
 # 1 Introduction
 
-Text…
+In this lab we developed a unit testing suite for several methods of two classes present in the provided JFreeChart system.
+We planned and built several tests by implementing black box test case design wherein we determined the domain of the input variable then derived equivalence classes for them to build tests around.
+We also ensured that boundary conditions were tested where applicable to ensure thorough testing of the system for all possible inputs.
 
 # 2 Detailed description of unit test strategy
 
