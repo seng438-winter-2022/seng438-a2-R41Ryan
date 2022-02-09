@@ -22,6 +22,8 @@ Additionally a special case for a scenario where the lower boundary was the same
 
 For other cases where an input variable was tests were designed to cover all of the possible equivalence classes for a generic example range spanning from negative to positive values.
 For range this would generally include cases above and below the given range as well as those within it. Additionally boundary values for the actual range limits are tested as input values.
+
+For the test cases for the DataUtilities methods, the general strategy was to identify equivalence classes for the various inputs and testing the variables within those equivalence classes and, if applicable, testing boundary values. For example, some methods have a variable that refers to an index in a collection, thus we test for when the index is out of bounds. Almost all of the tests for DataUtilities methods are done using integers and doubles as that is what those methods are meant to be used for.
  
 # 3 Test cases developed
 ### Range Class
