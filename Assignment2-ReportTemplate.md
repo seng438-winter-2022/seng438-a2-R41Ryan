@@ -48,6 +48,26 @@ getLength() Method
 * getLengthZeroRange() - This tests a zero width range with upper boundary = lower boundary  
 * getLengthLargeRange() - This tests a range with very large values for for the upper and lower boundary  
 
+DataUtilities Class
+
+calculateColumnTotal Method:
+* testBasicCalculateColumnTotal() - This is just a basic test with positive values to see if it works as intended using column 0
+* testCalculateColumnTotalWithNull() - This tests to see if null values are ignored when calculating the total by adding a single null value in a column.
+* testCalculateColumnTotalWithAllNulls() - This tests to see if null values are ignored when calculating the total by having an entire column null
+* testCalculateColumnTotalWithNoRows() - This tests to see if the calculated value is 0 when there are no rows.
+* testCalculateColumnTotalOutOfBoundsNegative() - This tests to see if an IndexOutOfBoundsException is thrown when entering the column -1
+* testCalculateColumnTotalOutOfBoundsPositive() - This tests to see if an IndexOutOfBoundsException is thrown when entering a column greater than the maximum index allows (in this case, column 2)
+* testCalculateColumnTotalPositiveBound() - This tests to see if the method still works as intended when selecting the positive bound (in this case, column 1)
+* testCalculateColumnTotalPositiveBound() - This tests to see if the valid rows method is working as intended.
+
+createNumberArray Method:
+* testCreateNumberArrayPositiveValues() - This tests the method using positive integers and decimals
+* testCreateNumberArrayNegativeValues() - This tests the method using negative integers and decimals
+
+getCumulativePercentages Method:
+* testGetCumulativePercentagesPositiveIntegers() - This tests the method using only positive integers
+* testGetCumulativePercentagesDoubles() - This tests the method using doubles
+* testGetCumulativePercentagesNegativeIntegers() - This tests the methods to see if it still works as intended with a negative integer.
 
 # 4 How the team work/effort was divided and managed
 
