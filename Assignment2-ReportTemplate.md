@@ -27,26 +27,26 @@ For range this would generally include cases above and below the given range as 
 Range Class
 
 getCentralValue() Method  
--centralValueMixedRange - Tests a range spanning from negative to positive   
--centralValuePositiveRange - Tests a range with only positive values  
--centralValueNegativeRange - Tests a range with only negative values  
--centralValueZeroWidethRange - Tests a range with zero width where the upper boundary = lower boundary  
--centralValueLargeRange() - Tests a range with very large values for upper and lower boundaries  
+* centralValueMixedRange - Tests a range spanning from negative to positive   
+* centralValuePositiveRange - Tests a range with only positive values  
+* centralValueNegativeRange - Tests a range with only negative values  
+* centralValueZeroWidethRange - Tests a range with zero width where the upper boundary = lower boundary  
+* centralValueLargeRange() - Tests a range with very large values for upper and lower boundaries  
 
 contains() Method: These tests unless specified all test a generic range with negative and positive values  
--containsValueInRange() - This test the equivalence class for a value contained in the specified range  
--containsValueLessThanRange() - This tests the equivalence class for all values less than the lower boundary of the specified range  
--containsValueGreaterThanRange() - This tests the equivalence class for all values greater than the upper boundary of the specified range   
--containsValueIsUpperBound() - This tests the boundary case where the input is the same as the range upper boundary  
--containsValueIsLowerBound() - This tests the boundary case where the input is the same as the range lower boundary  
--containsValueIsUpperAndLowerBound - This tests a special case where the range is zero width and the input value is the same as the upper and lower range boundary  
+* containsValueInRange() - This test the equivalence class for a value contained in the specified range  
+* containsValueLessThanRange() - This tests the equivalence class for all values less than the lower boundary of the specified range  
+* containsValueGreaterThanRange() - This tests the equivalence class for all values greater than the upper boundary of the specified range   
+* containsValueIsUpperBound() - This tests the boundary case where the input is the same as the range upper boundary  
+* containsValueIsLowerBound() - This tests the boundary case where the input is the same as the range lower boundary  
+* containsValueIsUpperAndLowerBound - This tests a special case where the range is zero width and the input value is the same as the upper and lower range boundary  
 
-getLength() Method  
--getlengthMixedRange() - This tests a range spanning from negative to positive  
--getLengthNegativeRange() - This tests a range containing only negative values    
--getLengthPositiveRange() - This tests a range containing only positive values  
--getLengthZeroRange() - This tests a zero width range with upper boundary = lower boundary  
--getLengthLargeRange() - This tests a range with very large values for for the upper and lower boundary  
+getLength() Method
+* getlengthMixedRange() - This tests a range spanning from negative to positive  
+* getLengthNegativeRange() - This tests a range containing only negative values    
+* getLengthPositiveRange() - This tests a range containing only positive values  
+* getLengthZeroRange() - This tests a zero width range with upper boundary = lower boundary  
+* getLengthLargeRange() - This tests a range with very large values for for the upper and lower boundary  
 
 
 # 4 How the team work/effort was divided and managed
