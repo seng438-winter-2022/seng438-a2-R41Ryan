@@ -24,7 +24,7 @@ For other cases where an input variable was tests were designed to cover all of 
 For range this would generally include cases above and below the given range as well as those within it. Additionally boundary values for the actual range limits are tested as input values.
  
 # 3 Test cases developed
-Range Class
+## Range Class
 
 getCentralValue() Method  
 * centralValueMixedRange - Tests a range spanning from negative to positive   
@@ -48,7 +48,7 @@ getLength() Method
 * getLengthZeroRange() - This tests a zero width range with upper boundary = lower boundary  
 * getLengthLargeRange() - This tests a range with very large values for for the upper and lower boundary  
 
-DataUtilities Class
+## DataUtilities Class
 
 calculateColumnTotal Method:
 * testBasicCalculateColumnTotal() - This is just a basic test with positive values to see if it works as intended using column 0
