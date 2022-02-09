@@ -24,7 +24,7 @@ For other cases where an input variable was tests were designed to cover all of 
 For range this would generally include cases above and below the given range as well as those within it. Additionally boundary values for the actual range limits are tested as input values.
  
 # 3 Test cases developed
-## Range Class
+### Range Class
 
 getCentralValue() Method  
 * centralValueMixedRange - Tests a range spanning from negative to positive   
@@ -50,9 +50,9 @@ getLength() Method
 * getLengthLargeRange() - This tests a range with very large values for for the upper and lower boundary  
 * getLengthNonIntRange() - This tests a range with non integer boundaries to ensure the returned length is correct  
 
-## DataUtilities Class
+### DataUtilities Class
 
-calculateColumnTotal Method:
+calculateColumnTotal() Method:
 * testBasicCalculateColumnTotal() - This is just a basic test with positive values to see if it works as intended using column 0
 * testCalculateColumnTotalWithNull() - This tests to see if null values are ignored when calculating the total by adding a single null value in a column.
 * testCalculateColumnTotalWithAllNulls() - This tests to see if null values are ignored when calculating the total by having an entire column null
@@ -62,11 +62,11 @@ calculateColumnTotal Method:
 * testCalculateColumnTotalPositiveBound() - This tests to see if the method still works as intended when selecting the positive bound (in this case, column 1)
 * testCalculateColumnTotalPositiveBound() - This tests to see if the valid rows method is working as intended.
 
-createNumberArray Method:
+createNumberArray() Method:
 * testCreateNumberArrayPositiveValues() - This tests the method using positive integers and decimals
 * testCreateNumberArrayNegativeValues() - This tests the method using negative integers and decimals
 
-getCumulativePercentages Method:
+getCumulativePercentages() Method:
 * testGetCumulativePercentagesPositiveIntegers() - This tests the method using only positive integers
 * testGetCumulativePercentagesDoubles() - This tests the method using doubles
 * testGetCumulativePercentagesNegativeIntegers() - This tests the methods to see if it still works as intended with a negative integer.
