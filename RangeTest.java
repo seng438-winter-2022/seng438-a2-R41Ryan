@@ -3,7 +3,7 @@ package org.jfree.data.test;
 import static org.junit.Assert.*; import org.jfree.data.Range; import org.junit.*;
 
 public class RangeTest {
-    private Range exampleRange, exampleRangePositive, exampleRangeNegative, exampleRangeZero,exampleLargeRange;
+    private Range exampleRange, exampleRangePositive, exampleRangeNegative, exampleRangeZero,exampleLargeRange, decimalRange;
     @BeforeClass public static void setUpBeforeClass() throws Exception {
     }
 
@@ -15,6 +15,7 @@ public class RangeTest {
     	exampleRangeNegative = new Range(-100,-1);
     	exampleRangeZero = new Range(0,0);
     	exampleLargeRange = new Range(-1000000000,1000000000);
+	decimalRange = new Range(-5.567,8.546);
     }
 
     //getCentralValue Method Testing
