@@ -50,6 +50,12 @@ public class RangeTest {
         assertEquals("The central value of -1000000000 and 1000000000 should be 0",
         0, exampleLargeRange.getCentralValue(), .000000001d);
     }
+	@Test
+    // This tests that central value can return a correct number when the range includes non integers
+    public void centralValueNonIntRange() {
+        assertEquals("The central value of -5.567 and 8.546 should be 1.4895",
+        1.4895, decimalRange.getCentralValue(), .000000001d);
+    }
     
     // Contains method Testing
     
@@ -115,6 +121,12 @@ public class RangeTest {
     public void getLengthLargeRange() {
         assertEquals("The length of 0 and 0 should be 0",
         2000000000, exampleLargeRange.getLength(), .000000001d);
+    }
+	@Test
+    // This tests a range with non integer boundaries
+    public void getLengthNonIntRange() {
+        assertEquals("The length of -5.567 and 8.546 should be 14.113",
+        14.113, decimalRange.getLength(), .000000001d);
     }
     
     // getLowerBound() testing
