@@ -50,7 +50,31 @@ getLength() Method
 * getLengthPositiveRange() - This tests a range containing only positive values  
 * getLengthZeroRange() - This tests a zero width range with upper boundary = lower boundary  
 * getLengthLargeRange() - This tests a range with very large values for for the upper and lower boundary  
-* getLengthNonIntRange() - This tests a range with non integer boundaries to ensure the returned length is correct  
+* getLengthNonIntRange() - This tests a range with non integer boundaries to ensure the returned length is correct 
+
+getLowerBound() Method:
+* testNegativeLowerBound() - Tests a range with a negative lower bound
+* testPositiveLowerBound() - Tests a range with a positive lower bound
+* testSamePositiveValuesLowerBound() - Tests a range with the same positive upper and lower bound
+* testSameNegativeValuesLowerBound() - Tests a range with the same negative upper and lower bound
+* testNegativeDecimalLowerBound() - Tests a range with a negative decimal lower bound
+* testPositiveDecimalLowerBound() - Tests a range with a positive decimal lower bound
+* testSamePositiveValuesDecimalLowerBound() - Tests a range with the same positive decimal upper and lower bound
+* testSameNegativeValuesDecimalLowerBound() - Tests a range with the same negative decimal upper and lower bound
+* testLargeLowerBound() - Tests a range with a very large lower bound
+* testSmallLowerBound() - Tests a range with a very small lower bound
+
+getUpperBound() Method:
+* testNegativeUpperBound() - Tests a range with a negative upper bound
+* testPositiveUpperBound() - Tests a range with a positive upper bound
+* testSamePositiveValuesUpperBound() - Tests a range with the same positive upper and lower bound
+* testSameNegativeValuesUpperBound() - Tests a range with the same negative upper and lower bound
+* testNegativeDecimalUpperBound() - Tests a range with a negative decimal upper bound
+* testPositiveDecimalUpperBound() - Tests a range with a positive decimal upper bound
+* testSamePositiveValuesDecimalUpperBound() - Tests a range with the same positive decimal upper and lower bound
+* testSameNegativeValuesDecimalUpperBound() - Tests a range with the same negative decimal upper and lower bound
+* testLargeUpperBound() - Tests a range with a very large upper bound
+* testSmallUpperBound() - Tests a range with a very small upper bound
 
 ### DataUtilities Class
 
