@@ -475,6 +475,7 @@ public class DataUtilitiesTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
+	// This tests to see if an exception is thrown when the method is given a null parameter, which is not permitted.
 	public void testCalculateColumnNullParameter() {
 		double results = DataUtilities.calculateColumnTotal(null, 0);
 	}
@@ -537,7 +538,7 @@ public class DataUtilitiesTest {
 	
 	@Test(expected = IllegalArgumentException.class)
 	// This tests the method using null values, which are not permitted. Thus, it should throw an illegal argument exception.
-	public void testCreateNumberArrayWithNull() {
+	public void testCreateNumberArrayNullParameter() {
 		Number[] results = DataUtilities.createNumberArray(null);
 	}
 	

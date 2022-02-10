@@ -89,10 +89,12 @@ calculateColumnTotal() Method:
 * testCalculateColumnTotalOutOfBoundsPositive() - This tests to see if an IndexOutOfBoundsException is thrown when entering a column greater than the maximum index allows (in this case, column 2)
 * testCalculateColumnTotalPositiveBound() - This tests to see if the method still works as intended when selecting the positive bound (in this case, column 1)
 * testCalculateColumnTotalPositiveBound() - This tests to see if the valid rows method is working as intended.
+* testCalculateColumnTotalNullParameter() - This tests to see if an exception is thrown when the method is given a null parameter, which is not permitted.
 
 createNumberArray() Method:
 * testCreateNumberArrayPositiveValues() - This tests the method using positive integers and decimals
 * testCreateNumberArrayNegativeValues() - This tests the method using negative integers and decimals
+* testCreateNumberArrayNullParameter() - This tests the method using null values, which are not permitted. Thus, it should throw an illegal argument exception.
 
 getCumulativePercentages() Method:
 * testGetCumulativePercentagesPositiveIntegers() - This tests the method using only positive integers
@@ -108,6 +110,7 @@ calculateRowTotal() Method:
 * calculateRowTotalForNullValues() - Tests for a whole row with null elements.
 * calculateRowTotalForPositiveRowWhichDoesNotExist() – Tests for whether an IndexOutOfBoundsException is thrown for when a positive row greater than the maximum index is given.
 * calculateRowTotalForNegativeRowWhichDoesNotExist() – Tests for whether an IndexOutOfBoundsException is thrown for when a negative row is given.
+* calculateRowTotalNullParameter() - This test the method with a null parameter, which is not permitted.
 
 equal() Method:
 * EqualArrays() – Tests for whether it can properly check two equal arrays with positive values. 
