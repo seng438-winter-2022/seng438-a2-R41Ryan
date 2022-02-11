@@ -15,6 +15,9 @@ In this lab we developed a unit testing suite for several methods of two classes
 We planned and built several tests by implementing black box test case design wherein we determined the domain of the input variable then derived equivalence classes for them to build tests around.
 We also ensured that boundary conditions were tested where applicable to ensure thorough testing of the system for all possible inputs.
 
+The JUnit Tests can be found in the JFreeChart folder where the test files are in JFreeChart/src/org/jfree/data/test.
+You can simply run the test as is in Eclipse.
+
 # 2 Detailed description of unit test strategy
 
 For the test cases developed for the range methods, many do not take any inputs directly and instead depend on the variables used to create the range class itself.
