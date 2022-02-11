@@ -1,7 +1,7 @@
 # seng438-assignment-2
 
-Test files are contained in the JFreeChart\src\org\jfree\data\test folder
-Report ((./Assignment2-Report.md))
+Test files are contained in the JFreeChart\src\org\jfree\data\test folder  
+Report ([Report](./Assignment2-Report.md))
 
 # Guidline
 
